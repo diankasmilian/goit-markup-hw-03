@@ -10,6 +10,8 @@
 
 /* Used class */
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -20,11 +22,17 @@
     font-family: Roboto, sans-serif;
     color: var(--primery-text-color);
 }
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1158px;
+}
 /* Header */
 
 
 .header {
     background-color: var(--primery-bg-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 /* Лого */
 .logo {
@@ -73,6 +81,9 @@ text-decoration: none;
 }
 
 /* Pages Studio */
+.section {
+    padding: 120px 0;
+}
 
 
 /* Main content */
@@ -81,14 +92,17 @@ text-decoration: none;
 }
 .hero {
     background-color: var(--primery-text-color);
+    text-align: center;
 }
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 48px;
 font-weight: 600;
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
-text-align: center;
     color: var(--primery-bg-color);
+ 
 }
 .btn {
     font-family: inherit;
@@ -101,6 +115,10 @@ text-align: center;
     background-color: var(--color-logo);
     border-color: var(--color-logo);
     cursor: pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 170px;
+   
 }
 
 
@@ -111,18 +129,27 @@ text-align: center;
     color: var(--text-color);
 }
 
+
 .description.title {
+    margin-top: 0;
+    margin-bottom: 8px;
 font-weight: 600;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 }
 .description.text {
+    width: 264px;
+    margin-top: 0;
+    margin-bottom: 0;
 font-size: 16px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 }
-.secondary-title {
+
+.work-title {
+    margin-top: 0;
+    margin-bottom: 72px;
 font-weight: 600;
 font-size: 36px;
 line-height: 1.1;
@@ -131,13 +158,28 @@ text-align: center;
 text-transform: capitalize;
     color: var(--primery-text-color);
 }
-.team.title {
+.work-item {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.section.team {
+    background-color: var(--two-color-logo);
+}
+.secondary-title {
+    margin-top: 0;
+    margin-bottom: 72px;
+}
+.team-title {
+    margin-top: 0;
+    margin-bottom: 0;
 font-weight: 600;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 }
-.team.text {
+.team-text {
+    margin-top: 0;
+    margin-bottom: 0;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -145,7 +187,19 @@ letter-spacing: 0.02em;
 
 
 /* Pages portfolio */
-.button {
+.header.portfolio {
+    margin-bottom: 96px;
+}
+.section-filter {
+    margin-top: 0;
+    margin-bottom: 72px;
+    text-align: center;
+}
+.section-portfolio {
+margin-top: 0;
+margin-bottom: 120px;
+}
+.filter-btn {
     font-family: inherit;
 font-weight: 600;
 font-size: 16px;
@@ -154,10 +208,14 @@ text-align: center;
 letter-spacing: 0.04em;
     background-color: var(--minor-color);
     color: var(--color-logo);
-    border-color: var(--two-color-logo);
     cursor: pointer;
+    border-radius: 4px;
+    padding: 4px 8px;
+    border: 1px solid var(--minor-color);
+  
+  
 }
-.button:hover, .button:focus {
+.filter-btn:hover, .filter-btn:focus {
     background-color: var(--color-logo);
     color: var(--primery-bg-color);
     border-color: var(--color-logo);
@@ -165,11 +223,19 @@ letter-spacing: 0.04em;
 /* Footer */
 .footer {
     background-color: var(--primery-text-color);
+    padding: 100px 1020px 100px 156px;
+    
+}
+.logo.bottom {
+    margin-bottom: 16px;
 }
 .secondary.studio-logo {
     color:  var(--two-color-logo);
 }
 .footer-text {
+    width: 264px;
+    margin-top: 0;
+    margin-bottom: 0;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
