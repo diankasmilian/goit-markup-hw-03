@@ -23,8 +23,8 @@
     color: var(--primery-text-color);
 }
 .container {
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
     width: 1158px;
 }
 /* Header */
@@ -81,22 +81,24 @@ text-decoration: none;
 }
 
 /* Pages Studio */
-.section {
-    padding: 120px 0;
-}
+
 
 
 /* Main content */
 .body {
     background-color: var(--primery-bg-color);
 }
-.hero {
+.hero.section {
+    margin-left: 0;
+    margin-right: 0;
     background-color: var(--primery-text-color);
     text-align: center;
+    padding: 192px;
 }
 .hero-title {
-    margin-top: 0;
-    margin-bottom: 48px;
+margin-right: 0;
+margin-top: 0;
+margin-bottom: 48px;
 font-weight: 600;
 font-size: 56px;
 line-height: 1.07;
@@ -118,6 +120,7 @@ text-align: center;
     border-radius: 4px;
     padding: 16px 32px;
     min-width: 170px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    
 }
 
@@ -128,7 +131,9 @@ text-align: center;
 .text {
     color: var(--text-color);
 }
-
+.description.section {
+    padding: 120px 0;
+}
 
 .description.title {
     margin-top: 0;
@@ -142,11 +147,14 @@ letter-spacing: 0.02em;
     width: 264px;
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: 0;
 font-size: 16px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 }
-
+.container.work {
+    padding-bottom: 120px;
+}
 .work-title {
     margin-top: 0;
     margin-bottom: 72px;
@@ -164,6 +172,10 @@ text-transform: capitalize;
 }
 .section.team {
     background-color: var(--two-color-logo);
+    text-align: center;
+}
+.container.team {
+    padding: 120px;
 }
 .secondary-title {
     margin-top: 0;
@@ -176,6 +188,7 @@ font-weight: 600;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+
 }
 .team-text {
     margin-top: 0;
